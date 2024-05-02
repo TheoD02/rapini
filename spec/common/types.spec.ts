@@ -3,43 +3,43 @@ import { makeTypes } from "../../src/common/types";
 import { compile } from "../test.utils";
 
 const expected = `export type RandomThing = {
-    id: number;
-    something: {
-        hello?: {
-            one?: string;
-            two?: number;
+    "id": number;
+    "something": {
+        "hello"?: {
+            "one"?: string;
+            "two"?: number;
         };
-        world?: string;
-        bla?: {
-            prop?: string;
-            erty?: string;
+        "world"?: string;
+        "bla"?: {
+            "prop"?: string;
+            "erty"?: string;
         }[];
     };
 };
 export type Pet = {
-    id: number;
-    name: string;
-    tag?: string | null;
-    petType?: ("cat" | "doge") | null;
-    nicknames?: string[];
-    random?: RandomThing;
+    "id": number;
+    "name": string;
+    "tag"?: string | null;
+    "petType"?: ("cat" | "doge") | null;
+    "nicknames"?: string[];
+    "random"?: RandomThing;
 };
 export type Pets = Pet[];
 export type Animal = {
-    home?: string;
-    pet?: Pet;
+    "home"?: string;
+    "pet"?: Pet;
 };
 export type Cat = Pet & {
-    name?: string;
+    "name"?: string;
 };
 export type Dog = Pet & {
-    bark?: string;
+    "bark"?: string;
 };
 export type MyResponseType = Cat | Dog;
 export type MyResponseTypeTwo = Cat | Dog;
 export type Error = {
-    code: number;
-    message: string;
+    "code": number;
+    "message": string;
 };
 export type MyDictionary = {
     [key: string]: string;
@@ -58,14 +58,14 @@ export type MyDictionaryRef = {
 };
 export type MyDictionaryValue = {
     [key: string]: {
-        code?: number;
-        text?: string;
+        "code"?: number;
+        "text"?: string;
     };
 };
 export type MyDictionaryValueNested = {
-    field?: {
+    "field"?: {
         [key: string]: {
-            nested?: boolean;
+            "nested"?: boolean;
         };
     };
 };

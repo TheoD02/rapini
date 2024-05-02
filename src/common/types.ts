@@ -92,7 +92,7 @@ function createPropertySignatures(
     createPropertySignature(
       $refs,
       prop,
-      name,
+      '"' + name + '"',
       item.required?.includes(name) ?? false
     )
   );
